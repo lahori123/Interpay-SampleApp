@@ -66,7 +66,6 @@ namespace SampleAppForWebRouting.Controllers
             }
             else
             {
-                response.status_message = null;
                 if(response.status_message == null)
                 {
                     response.status_message = "Error while getting the response from the API.";
