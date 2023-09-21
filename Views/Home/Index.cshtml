@@ -15,7 +15,7 @@
     </script>
 </head>
 
-<form asp-controller="Home" asp-action="Index" method="post">
+@* <form asp-controller="Home" asp-action="Index" method="post">
         <div class="form-group row">
             <label asp-for="app_id"></label>
             <div class="col-md-10">
@@ -116,4 +116,99 @@
         <div>
             <button type="submit">Submit</button>
         </div>
+</form> *@
+
+
+
+<form asp-controller="Home" asp-action="Index" method="post">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <label asp-for="app_id"></label>
+                <input asp-for="app_id" class="form-control" />
+                <span asp-validation-for="app_id" class="text-danger"></span>
+            </div>
+        
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <label asp-for="app_key"></label>
+                <input asp-for="app_key" class="form-control" />
+                <span asp-validation-for="app_key" class="text-danger"></span>
+            </div>
+        
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <label asp-for="FeeTypeCode"></label>
+                <input asp-for="FeeTypeCode" class="form-control" />
+                <span asp-validation-for="FeeTypeCode" class="text-danger"></span>
+            </div>
+        </div>
+    
+    
+        <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <label asp-for="Mobile"></label>
+                <input asp-for="Mobile" class="form-control" />
+                <span asp-validation-for="Mobile" class="text-danger"></span>
+            </div>
+
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <label asp-for="Currency"></label>
+                <input asp-for="Currency" class="form-control" />
+                <span asp-validation-for="Currency" class="text-danger"></span>
+            </div>
+
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <label asp-for="Amount"></label>
+                <input asp-for="Amount" class="form-control" />
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+    
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <label asp-for="order_id"></label>
+                <input asp-for="order_id" class="form-control" />
+                <span asp-validation-for="order_id" class="text-danger"></span>
+            </div>
+        
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <label asp-for="order_desc"></label>
+                <input asp-for="order_desc" class="form-control" />
+                <span asp-validation-for="order_desc" class="text-danger"></span>
+            </div>
+
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <label asp-for="MobileNetwork"></label>
+                <input asp-for="MobileNetwork" class="form-control" />
+                <span asp-validation-for="MobileNetwork" class="text-danger"></span>
+            </div>
+
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <label asp-for="ReturnURL"></label>
+                <input asp-for="ReturnURL" class="form-control" />
+                <span asp-validation-for="ReturnURL" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="col-sm-3 col-md-3 col-lg-3"></div>
+        <div class="col-sm-3 col-md-3 col-lg-3"></div>
+        <div class="col-sm-3 col-md-3 col-lg-3"></div>
+        <div class="col-sm-3 col-md-3 col-lg-3" style="margin-right:0px">
+            <button type="submit">Submit</button>
+        </div>
+    </div>
 </form>

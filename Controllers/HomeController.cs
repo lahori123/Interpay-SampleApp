@@ -21,8 +21,8 @@ namespace SampleAppForWebRouting.Controllers
         public IActionResult Index()
         {
             PaymentProcessing model = new PaymentProcessing();
-            model.app_id = "5312087842";
-            model.app_key = "60070471";
+            model.app_id = "8412217316";
+            model.app_key = "32075727";
             model.Name = "Test";
             model.FeeTypeCode = "GENERALPAYMENT";
             model.Mobile = 0249567265;
@@ -57,7 +57,7 @@ namespace SampleAppForWebRouting.Controllers
             catch(Exception ex)
             {
                 response.status_code = 0;
-                response.status_message = ex.Message + "Error while getting response.";
+                response.status_message = "Error on parsing " + ex.Message + " and response from the API is " + result;
             }
 
             if (response.redirect_url != null)
@@ -66,7 +66,11 @@ namespace SampleAppForWebRouting.Controllers
             }
             else
             {
-                response.status_message = "Error while getting response";
+                response.status_message = null;
+                if(response.status_message == null)
+                {
+                    response.status_message = "Error while getting the response from the API.";
+                }
                 return Json(response.status_message);
             }
             
