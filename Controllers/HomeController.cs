@@ -21,18 +21,22 @@ namespace SampleAppForWebRouting.Controllers
         public IActionResult Index()
         {
             PaymentProcessing model = new PaymentProcessing();
+            //CSG testing
             model.app_id = "8412217316";
             model.app_key = "32075727";
-            model.Name = "Test";
+            //Local testing
+            //model.app_id = "8380762017";
+            //model.app_key = "51274726";
+            model.name = "Test";
             model.FeeTypeCode = "GENERALPAYMENT";
-            model.Mobile = 0249567265;
-            model.Currency = "GHS";
-            model.Amount = 1;
-            model.Email = "name@gmail.com";
+            model.mobile = "+233249567265";
+            model.currency = "GHS";
+            model.amount = 1;
+            model.email = "name@gmail.com";
             model.order_id = "23klklk";
             model.order_desc = "Test Order";
-            model.MobileNetwork = "MTN";
-            model.ReturnURL = "https://webhook.site/46ab2302-f14d-4b9b-8205-3cb14a80fd3f";
+            model.mobile_network = "MTN";
+            model.return_url = "https://webhook.site/46ab2302-f14d-4b9b-8205-3cb14a80fd3f";
 
             return View(model);
         }

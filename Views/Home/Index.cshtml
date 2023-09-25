@@ -15,111 +15,6 @@
     </script>
 </head>
 
-@* <form asp-controller="Home" asp-action="Index" method="post">
-        <div class="form-group row">
-            <label asp-for="app_id"></label>
-            <div class="col-md-10">
-                <input asp-for="app_id" />
-                <span asp-validation-for="app_id" class="text-danger"></span>
-            </div>
-        </div>
-
-        <div class="form-group row">
-            <label asp-for="app_key"></label>
-            <div class="col-md-10">
-                <input asp-for="app_key" />
-                <span asp-validation-for="app_key" class="text-danger"></span>
-            </div>
-        </div>
-
-        <div class="form-group row">
-            <label asp-for="Name"></label>
-            <div class="col-md-10">
-                <input asp-for="Name" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-        </div>
-
-        <div class="form-group row">
-            <label asp-for="FeeTypeCode"></label>
-            <div class="col-md-10">
-                <input asp-for="FeeTypeCode" />
-                <span asp-validation-for="FeeTypeCode" class="text-danger"></span>
-            </div>
-        </div>
-
-            <div class="form-group row">
-                <label asp-for="Mobile"></label>
-                <div class="col-md-10">
-                <input asp-for="Mobile" />
-                <span asp-validation-for="Mobile" class="text-danger"></span>
-            </div>
-            </div>
-
-            <div class="form-group row">
-                <label asp-for="Currency"></label>
-                <div class="col-md-10">
-                    <input asp-for="Currency" />
-                    <span asp-validation-for="Currency" class="text-danger"></span>
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <label asp-for="Amount"></label>
-                <div class="col-md-10">
-                    <input asp-for="Amount" />
-                    <span asp-validation-for="Amount" class="text-danger"></span>
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <label asp-for="Email"></label>
-                <div class="col-md-10">
-                    <input asp-for="Email" />
-                    <span asp-validation-for="Email" class="text-danger"></span>
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <label asp-for="order_id"></label>
-                <div class="col-md-10">
-                    <input asp-for="order_id" />
-                    <span asp-validation-for="order_id" class="text-danger"></span>
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <label asp-for="order_desc"></label>
-                <div class="col-md-10">
-                    <input asp-for="order_desc" />
-                    <span asp-validation-for="order_desc" class="text-danger"></span>
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <label asp-for="MobileNetwork"></label>
-                <div class="col-md-10">
-                    <input asp-for="MobileNetwork" />
-                    <span asp-validation-for="MobileNetwork" class="text-danger"></span>
-                </div>
-            </div>
-
-            <div class="form-group row">
-                <label asp-for="ReturnURL"></label>
-                <div class="col-md-10">
-                    <input asp-for="ReturnURL" />
-                    <span asp-validation-for="ReturnURL" class="text-danger"></span>
-                </div>
-            </div>
-
-        <br />
-        <div>
-            <button type="submit">Submit</button>
-        </div>
-</form> *@
-
-
-
 <form asp-controller="Home" asp-action="Index" method="post">
     <div class="container">
         <div class="row">
@@ -136,9 +31,9 @@
             </div>
         
             <div class="col-sm-3 col-md-3 col-lg-3">
-                <label asp-for="Name"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+                <label asp-for="name"></label>
+                <input asp-for="name" class="form-control" />
+                <span asp-validation-for="name" class="text-danger"></span>
             </div>
             
             <div class="col-sm-3 col-md-3 col-lg-3">
@@ -151,27 +46,27 @@
     
         <div class="row">
             <div class="col-sm-3 col-md-3 col-lg-3">
-                <label asp-for="Mobile"></label>
-                <input asp-for="Mobile" class="form-control" />
-                <span asp-validation-for="Mobile" class="text-danger"></span>
+                <label asp-for="mobile"></label>
+                <input asp-for="mobile" class="form-control" />
+                <span asp-validation-for="mobile" class="text-danger"></span>
             </div>
 
             <div class="col-sm-3 col-md-3 col-lg-3">
-                <label asp-for="Currency"></label>
-                <input asp-for="Currency" class="form-control" />
-                <span asp-validation-for="Currency" class="text-danger"></span>
+                <label asp-for="currency"></label>
+                <input asp-for="currency" class="form-control" />
+                <span asp-validation-for="currency" class="text-danger"></span>
             </div>
 
             <div class="col-sm-3 col-md-3 col-lg-3">
-                <label asp-for="Amount"></label>
-                <input asp-for="Amount" class="form-control" />
-                <span asp-validation-for="Amount" class="text-danger"></span>
+                <label asp-for="amount"></label>
+                <input asp-for="amount" class="form-control" />
+                <span asp-validation-for="amount" class="text-danger"></span>
             </div>
     
             <div class="col-sm-3 col-md-3 col-lg-3">
-                <label asp-for="Email"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
+                <label asp-for="email"></label>
+                <input asp-for="email" class="form-control" />
+                <span asp-validation-for="email" class="text-danger"></span>
             </div>
         </div>
 
@@ -189,15 +84,15 @@
             </div>
 
             <div class="col-sm-3 col-md-3 col-lg-3">
-                <label asp-for="MobileNetwork"></label>
-                <input asp-for="MobileNetwork" class="form-control" />
-                <span asp-validation-for="MobileNetwork" class="text-danger"></span>
+                <label asp-for="mobile_network"></label>
+                <input asp-for="mobile_network" class="form-control" />
+                <span asp-validation-for="mobile_network" class="text-danger"></span>
             </div>
 
             <div class="col-sm-3 col-md-3 col-lg-3">
-                <label asp-for="ReturnURL"></label>
-                <input asp-for="ReturnURL" class="form-control" />
-                <span asp-validation-for="ReturnURL" class="text-danger"></span>
+                <label asp-for="return_url"></label>
+                <input asp-for="return_url" class="form-control" />
+                <span asp-validation-for="return_url" class="text-danger"></span>
             </div>
         </div>
     </div>
